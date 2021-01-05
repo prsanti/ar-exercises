@@ -41,15 +41,3 @@ p @store6
 # Store 6
 @store6.employees.create(first_name: "Fox", last_name: "McCloud", hourly_rate: 41)
 @store6.employees.create(first_name: "Falco", last_name: "Lombardi", hourly_rate: 45)
-
-puts "Name a new store."
-print ">"
-
-user_store = gets.chomp
-
-@newStore = Store.create(name: user_store)
-@errors = @newStore.errors.messages
-
-@errors.each do |error|
-  puts error
-end
