@@ -11,6 +11,13 @@ puts "----------"
 # t.column :womens_apparel, :boolean
 
 burnaby = Store.create(name: "Burnaby", annual_revenue: 300000, mens_apparel: true, womens_apparel: false)
+# burnaby = Store.new do |store|
+#   store.name = "Burnaby"
+#   store.annual_revenue = 300000
+#   store.mens_apparel = true
+#   store.womens_apparel = false
+# end
+
 
 richmond = Store.create(name: "Richmond", annual_revenue: 1260000, mens_apparel: false, womens_apparel: true)
 
